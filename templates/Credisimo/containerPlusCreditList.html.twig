@@ -1,0 +1,56 @@
+    
+<div class="container">
+    <h1>Plus Credit List</h1>
+    
+            
+    <!--data-ajax="ajaxRequest"
+    data-side-pagination="server"
+    data-show-search-clear-button="true"
+    -->
+            <table
+                id="table"
+                data-show-columns="true"
+                data-show-columns-toggle-all="true"
+                data-pagination="true"
+                data-page-list="[5, 10, 25, 50, 100, all]"
+            >
+                <thead>
+                    <tr>
+                        <th data-field="number" >N</th>
+                        <th data-field="date" >Date</th>
+                        <th data-field="period" >Period</th>
+                        <th data-field="installmentAmount" >Installment Amount</th>
+                        <th data-field="principal" >Principal</th>
+                        
+                        <th data-field="interest" >Interest</th>
+                        <th data-field="tax1" >Tax 1</th>
+                        <th data-field="tax2" >Tax 2</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    {% for key, paramsList in paramsLists %}
+                        <tr>
+                            <td  >{{ paramsList.number }}</td>
+                            <td  >{{ paramsList.date }}</td>
+                            <td  >{{ paramsList.period }}</td>
+                            <td  >{{ paramsList.installmentAmount }}</td>
+                            <td  >{{ paramsList.principal }}</td>
+
+                            <td  >{{ paramsList.interest }}</td>
+                            <td  >{{ paramsList.tax1 }}</td>
+                            <td  >{{ paramsList.tax2 }}</td>
+                        
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                
+            </table>
+      
+</div>
+<script>
+    $(function() {
+        $('#table').bootstrapTable()
+    })
+
+    
+</script>

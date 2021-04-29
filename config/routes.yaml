@@ -1,0 +1,16 @@
+index:
+    path: /
+    controller: App\Controller\PlusCredit::Index
+    methods:    [GET]
+
+
+PlusCredit:
+    path: /PlusCredit
+    controller: App\Controller\PlusCredit::Index
+    methods:    [GET]
+    
+getPlusCreditSchedule:
+    path: /getPlusCreditSchedule
+    controller: App\Controller\PlusCredit::getSchedule
+    methods:    [POST]
+

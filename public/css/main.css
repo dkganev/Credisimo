@@ -1,0 +1,106 @@
+.page-header.navbar {
+    background-color: #ffffff;
+    width: 99%;
+    margin: 0px 0px 0px 0px;
+    border: 0;
+    padding: 0;
+    height: 50px;
+    min-height: 50px;
+    filter: none;
+    background-image: none;
+    position: relative;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: none;
+    max-height: 800px;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    font-size: 24px;
+}
+
+button[name='clearSearch'] .fa {
+    font-size: 24px;
+}
+
+.bootstrap-table .fixed-table-container .fixed-table-body {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: auto;
+}
+
+.navbar {
+    border-radius: 0px;
+    border-bottom: 5px solid #09a8eb;
+}
+
+.navbar-brand {
+    padding: 0px 15px 0px 15px;
+    margin: 7px 0px 10px 0px;
+    width-max: 50px;
+}
+.nav-link {
+    font-size: 22px;
+}
+
+
+.page-header.navbar .page-header-inner {
+    position: fixed;
+    float: left;
+}
+
+
+.page-header.navbar .page-logo {
+    float: left;
+    display: block;
+    width: 235px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.logo-img {
+     max-width: 150px;
+}
+
+.body-box {
+    margin-top: 75px;
+    position: relative;
+    
+}
+
+
+.main-box {
+    width: 33%; 
+    float: left;
+     
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.box1 {
+    width: 70%; 
+    border: 1px solid #2D5F8B;
+    border-radius: 5px;
+    float: left;     
+    text-align: center;
+    margin: 10%;
+    margin-top: 20px;
+    
+    position: relative;
+    display: block;
+}
+
+.box2.fa {
+    padding: 1rem ;
+    font-size:48px;
+    color:#2D5F8B; 
+    border: 10px solid #2D5F8B;
+}
+
+label {
+    text-align: right;
+}

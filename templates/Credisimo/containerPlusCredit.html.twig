@@ -1,0 +1,134 @@
+<div class="container">
+    <h1>Plus Credit</h1>
+    <form action="/getPlusCreditSchedule" method="POST">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label>
+                        <sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Number of installments:<br/>
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;"> 3-24 numbers of installments.</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="number" name="numberOfInstallments" min="3" max="24" placeholder="Number of installments"  value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">3-24</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Credit amount:<br/> 
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;"> 500-5000 BGN</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="number" name="amount" min="500" max="5000" placeholder="Credit amount" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">BGN</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Annual interest rate:<br/>
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;">in persents</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3"> 
+                        <input class="form-control " type="number" name="air" min="0" max="100" placeholder="Annual interest rate" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">&nbsp;&nbsp; %&nbsp;&nbsp; </span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Maturity date:<br />
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;">10,20 or EOM days</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <input class="form-control" type="date" id="datepicker" name="maturityDate" min="2021-04-10" max="2021-05-31"  valueAsDate="12"  step="10" dateformat="YYYY-MM-DD" value="" required>
+                    
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup> Utilisation date:</label>
+                </div>
+                <div class="col-sm-4">
+                    <input class="form-control" type="date" name="utilisationDate"  data-date-format="YYYY-MM-DD" value="" required>
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Fist tax:<br/> 
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;">first tax</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="number" name="taxes[tax1]" placeholder="Fist tax" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">BGN</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <label><sup><i class="fa fa-asterisk" style="font-size: 10px; "></i></sup>
+                        Second tax:<br/> 
+                        <span style="font-size: 0.85em;font-style: italic;color: #666;"> second tax</span>
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="number" name="taxes[tax2]" placeholder="Second tax" value="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">BGN</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4 text-right">
+                    <button type="button" id="openListForm" class="btn btn-success" data-dismiss="view">View List <i class="fa fa-eye"></i></button>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <input type="submit" value="Submit">
+                </div>    
+            </div>
+        </div>     
+        
+    </form>    
+</div>
+  
